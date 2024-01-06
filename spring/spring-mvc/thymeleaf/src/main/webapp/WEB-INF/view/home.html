@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Thymeleaf Page</title>
+</head>
+<body>
+    <h1>Welcome to Home Page!</h1>
+
+    <div th:if="${user}">
+        <p th:text="'Hello, ' + ${user.name} + '! Welcome to our website.'"></p>
+    </div>
+    <div th:unless="${user}">
+        <p>Welcome, Guest! Please sign in.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>dev.spring</groupId>
+  <artifactId>thymeleafForms</artifactId>
+  <version>1.0</version>
+  <packaging>war</packaging>
+  <name>thymeleafForms</name>
+  
+  <dependencies>
+	  <dependency>
+		  <groupId>org.springframework</groupId>
+		  <artifactId>spring-webmvc</artifactId>
+		  <version>6.1.2</version>
+	  </dependency>
+	  
+	  <dependency>
+		  <groupId>jakarta.servlet</groupId>
+		  <artifactId>jakarta.servlet-api</artifactId>
+		  <version>6.0.0</version>
+	  </dependency>
+	  
+	  <dependency>
+		  <groupId>org.thymeleaf</groupId>
+		  <artifactId>thymeleaf</artifactId>
+		  <version>3.1.2.RELEASE</version>
+	  </dependency>
+	  
+	  <dependency>
+		  <groupId>org.thymeleaf</groupId>
+		  <artifactId>thymeleaf-spring6</artifactId>
+		  <version>3.1.2.RELEASE</version>
+	  </dependency>
+	  
+	  <dependency>
+          <groupId>org.hibernate.validator</groupId>
+    	  <artifactId>hibernate-validator</artifactId>
+          <version>8.0.1.Final</version>
+	  </dependency>
+
+  </dependencies>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <release>21</release>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.2.3</version>
+      </plugin>
+    </plugins>
+  </build>
+</project>
